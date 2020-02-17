@@ -1,12 +1,19 @@
-<h1>Questions#answer</h1>
+<!-- <h1>Questions#answer</h1> -->
 <!-- <p>Find me in app/views/questions/answer.html.erb</p> -->
+<div class="container">
+  <h1>Stupid Coaching</h1>
 
-<p><%= @question %></p>
-<p>-You</p>
+  <div class="question">
+    <p><%= @question %></p>
+    <p>- You</p>
+  </div>
 
-<br>
+  <br>
 
-<p><%= @answer %></p>
-<p>-Your coach</p>
+  <div class="answer">
+    <p><%= @answer %></p>
+    <p>- Your coach</p>
+  </div>
 
-<p><%= link_to "Ask a new question", ask_path %></p>
+  <p id="link"><%= link_to "Ask a new question", ask_path, :style=>'color: #3379B8;''text-decoration: none;' %></p>
+</div>
